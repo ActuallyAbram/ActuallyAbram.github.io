@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+
+		<title>Abram Huang - Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	 img {
+            max-width: 100%;
+            height: auto;
+        }
+		  figcaption {
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            color: #888;
+        }
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="generic.html">CV</a></li>
+							<li class="active"><a href="elements.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/abramhuang" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ActuallyAbram" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<section class="post">
+								<h2>Shock Clevis Design</h2>
+								<h3>Background</h3>
+<!--								<h3>Mechanical Engineering (BS) </br> University of Maryland, College Park, MD (GPA: 3.7) <i>(2019-2023)</i></h3>-->
+
+								<p>As part of my university’s FSAE Formula Electric Team, I was tasked to design a shock clevis for the car’s suspension system. The shock clevis role was to serve as the medium that fastens the damper and spring to the car’s chassis.
+While the racetrack we would be testing the vehicle would be relatively smooth, it was important to get our car suspensions designed correctly so it accomplish the following goals.
+</p>
+							<ul><li>Allow rapid cornering without extreme body roll</li>
+								<li>Keep the tire in contact with the road after striking bumps and or holes in the road</li>
+								<li>Prevent excessive body squat ( body tilts down in rear) when accelerating and body dive (body tilts down in front)</li>
+							</ul>
+							<p>In a traditional F1 Car, the two most popular suspension styles are push rod suspensions and pull rod suspension. These type of suspensions system operate independently, meaning each wheel is free to jounce and rebound as it encounters obstacles in the road. </p>
+							<img src="images/shock_2.png" , style="border: 1px solid black;">
+							<p><i>Push Rod and Pull Rod Suspension where A: Lower Control Arm,  B: Upper Control Arm,  C: Pull Rod,  D: Push Rod</i></p>
+							<p>Our team decided to go with a push-rod suspension style as it afforded easy access to the spring and dampers by placing them at the top of the back plate as well as placing them out of the way of our control arms. While this would result in a higher center of gravity, we were confident that our torsion bar
+configuration would help prevent rolling and the advantages in accessibility outweighed the disadvantages.
+</p>
+							<p>In a push rod configuration, when the tire encounters a bump, it “pushes” the push rod upward against the spring, which then transfers the force of impact against the chassis. These springs are located co-axially to dampers, which minimize the oscillations produced by the spring moving up and down.
+							</p>
+							<img src="images/shock_3.gif" width="1000" , style="border: 1px solid black;">
+							<p><i>Push Rod Kinematics from bremarauto.com</i></p>
+							<h3>Design</h3>
+							<p>Given the background of the suspension system, a double shear shock clevis design was chosen to help distribute the shear force applied by the shock. </p>
+							<img src="images/shock_4.png", style="border: 1px solid black;">
+							<p><i>Double Shear Shock</i></p>
+							<p>Given the inputs of the maximum compression force and rebounce force and assuming a basic triangular geometry, I began to calculate reaction forces symbolically. The three parameters I had to design for were the material type, material thickness, and the diameter of the fasteners. I knew that the major failure types would mostly like be bearing stress and tearout stress, given the conditions. As I did not have enough data on the cycling loading of the clevis, I would explore that failure type in a latter study as our team simply wanted to make a first prototype. For the material type in an effort to conserve material, we decided to choose a ½ inch  sheet metal piece of 7075 Al we had lying around in our shop. 7075 Al balance a good strength to weight ratio, which would be sufficient for our design. </p>
+
+							<img src="images/shock_5.png", style="border: 1px solid black;">
+							<p><i>Failure Methods and Safety Factors</i></p>
+							<p>From the above calculated forces, it is evident that the shock clevis design is more than sufficient, however more could be done to lightweight this design.
+</p>
+							<h3>Topology Optimization</h3>
+							<p>To lightweight my design, I decided to use Solidworks built in topology optimization. Solidworks topology optimization works by feeding in my input forces and materials and by using numerical methods, it highlights what material is important structurally and what is redundant. In this photo, the original outline is orange, while the new topology feature is highlighted using a color bar. </p>
+							<img src="images/shock_6.png", style="border: 1px solid black;">
+							<p><i>Solidworks Topology of Clevis</i></p>
+							<p>Following this topology geometry, I created a weight reduced clevis. This weight reduced clevis results in 22% less material being used. With regard to manufacturability, the availability of waterjet affords more unique geometry in comparison to a traditional CNC, thus allowing for this new clevis to be manufactured in our new car.</p>
+							<img src="images/shock_7.png", style="border: 1px solid black;">
+							<p><i>Original Clevis (left) and Weight Reduced Clevis (right)</i></p>
+						</section>
+
+<!--				<section class="posts" style="text-align: center;">-->
+<!--  <div style="display: inline-block; border-style: dotted;">-->
+<!--    <h3 style="display: inline-block; margin: 0;">Shock Clevis Design</h3>-->
+<!--	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, urna vel rhoncus eleifend, dui nulla posuere justo, ac luctus nibh odio ut mi. Nulla facilisi. Vestibulum venenatis elit non enim interdum, et feugiat quam malesuada. Nulla facilisi. Suspendisse potenti. Proin eleifend neque sit amet aliquet ultricies. In nec lacinia elit. Nam ut sagittis est. Praesent in odio sem. Mauris rhoncus massa eget orci aliquet, ut laoreet sapien pulvinar. Donec non quam vel velit cursus convallis. Sed at ligula bibendum, posuere purus vel, gravida odio. Vivamus at risus orci. Integer quis quam sit amet neque rhoncus posuere. Suspendisse id sollicitudin ipsum.</p>-->
+
+
+				</section>
+
+
+						<!-- Footer -->
+						<footer>
+							<center>
+
+								<section>
+									<h3></h3>
+									<ul class="icons alt">
+										<li><a href="https://www.linkedin.com/in/abramhuang" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/ActuallyAbram" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+
+							</section>
+						</center>
+						</footer>
+
+				</div>
+
+
+
+
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>Hosted on Github</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
