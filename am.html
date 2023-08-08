@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+
+		<title>Abram Huang - Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	 img {
+            max-width: 100%;
+            height: auto;
+        }
+		  figcaption {
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            color: #888;
+        }
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="generic.html">CV</a></li>
+							<li class="active"><a href="elements.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/abramhuang" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ActuallyAbram" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<section class="post">
+								<h2>Additively Manufactured Coldplate</h2>
+								<h3>Background</h3>
+								<p>The more <b> powerful</b> and advanced a radar system becomes, the more <b>heat</b> it generates.
+In this energy intensive environment, liquid cold plates are often placed alongside surfaces with high heat loads. These cold plates collect the heat from the heated surfaces via conduction and convect the heat off fins to a coolant fluid that is being pumped through the plate via a pressure head.</p>
+							<p>With the limitations to fin geometries produced from subtractive manufacturing, interest has been growing to use additive manufacturing to create heat sinks with <b>novel fins designs</b> that will increase heat transfer efficiency.
+In a project in affiliation with <i>Northrop Grumman</i>, who provided a base cold sink coupon design, and the <i>Center for Advanced Life Cycle Engineering at the University of Maryland</i>, who provided the materials and printers,  our team was tasked to using <b>Selective Laser Melting (SLM) </b> to print a novel fin cold plate part of our design.</p>
+							<p>If you are not familiar with SLM, I provided a youtube video below for some background.
+							</p>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Mjf6oaMVWr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							<br></br>
+							<h3>Design</h3>
+							<p>Our goal was to create a design that <b>maximize</b> the heat transfer from the part while <b>minimizing</b> hydrodynamic resistance. The main challenge of such a design would be the antagonistic goals. That is because maximizing heat transfer through increasing fin surface area would also increase hydrodynamic resistance, resulting in a slowdown of the flow of coolant. We also wanted to create a design that would <b>necessitate</b> additive manufacturing as opposed to CNC manufacturing given the current expense of printing with SLM.</p>
+							<p>After completing a literature review, we decided upon increasing the surface area to volume ratio by using a porous structure. We took inspiration from nature and choose a body centered cubic lattice as it had both a large surface area and porosity. It also had a low coefficient of friction in comparison to other lattice structures. A BCC structure provides the benefits of not requiring any support material removal as well. In our design model we achieved a maximum porosity of 90.5%. In addition the lattice structure resulted in a surface area to volume ratio of 19:1. This combination suggested a efficient use of channel space prior to testing.</p>
+							<img src="images/am-physical_model.png" width="900" , style="border: 1px solid black;">
+							<p><i>Lattice Structure in base cold plate token (left), BCC Lattice Structure (right)</i></p>
+							<h3>Fabrication</h3>
+							<p>The lattice structure and cold plate token was printed using SLM in Inconel with the 3D Systems Prox 200. </p>
+							<img src="images/am-fab_1.jpg" width="900" , style="border: 1px solid black;">
+							<p><i>Printed part before processing</i></p>
+							<p>After printing, the token was water sealed with plastic using UV curable adhesive and nozzles were added. </p>
+							<img src="images/am-fab_2.jpg" width="900" , style="border: 1px solid black;">
+							<p><i>Printed part after processing</i></p>
+							<h3>Testing</h3>
+							<p>For our experimental setup we used a pressure based flow controller to set a pressure and measure the flowrate that runs through the token. To measure the temperature difference, we set the token on top of a 90 &deg;C hot plate and took temperature measurements over the period of 10 minutes by scanning the water that comes out of the outlet with a temperature gun</p>
+							<img src="images/am-setup.png" width="900" , style="border: 1px solid black;">
+							<p>The following equations were used to collect the temperature increase and hydrodynamic resistance.</p>
+							<img src="images/am-equation.png" width="900" , style="border: 1px solid black;">
+							<br></br>
+							<h3>Results</h3>
+							<p>Our experimental resistance was lower than the control. The control was the worst fluidic resistance measurement across 6 different experimental groups with different fin designs.
+							</p>
+							<img src="images/am-bar_resist_grid.png" width="900" , style="border: 1px solid black;">
+							<p>In comparison to our control, our token had a 4.9  &deg;C greater temperature increase, suggesting improved thermal performance over our control.</p>
+							<img src="images/am-temp_fig.png" width="900" , style="border: 1px solid black;">
+							<h3>Next Steps</h3>
+							<img src="images/am-vector.png" width="900" , style="border: 1px solid black;">
+							<p>While we were happy with our work, we wanted to explore field driven design approach in the future. We started this approach with some CFD simulations in ANSYS. We would use CFD results to create geometry that conforms to internal flow while maximizing surface area for maximum heat transfer. We could also eliminate spots with zero flow velocity with this approach.
+</p>
+
+						</section>
+
+
+				</section>
+
+
+						<!-- Footer -->
+						<footer>
+							<center>
+
+								<section>
+									<h3></h3>
+									<ul class="icons alt">
+										<li><a href="https://www.linkedin.com/in/abramhuang" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://github.com/ActuallyAbram" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+
+							</section>
+						</center>
+						</footer>
+
+				</div>
+
+
+
+
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>Hosted on Github</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
